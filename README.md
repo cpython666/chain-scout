@@ -1,12 +1,13 @@
-# Web3-Monitor-Go
+# Chain-Scout
 
 [![Go Version](https://img.shields.io/badge/Go-1.21-blue.svg)](https://golang.org/) [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 ## 项目概述
-Web3-Monitor-Go 是一个使用 Go 语言构建的 Web3 领域信息监控系统，支持定时爬取新闻和监控区块链仓位变化。项目使用 MongoDB 作为数据库，支持任务重启和持久化状态。通过 cron 调度器管理多个并发任务，适用于实时监控 DeFi、NFT 或加密货币相关事件。项目结构模块化，便于扩展和维护。
+
+Chain-Scout 是一个使用 Go 语言构建的 Web3 领域信息监控系统，支持定时爬取新闻和监控区块链仓位变化。项目使用 MongoDB 作为数据库，支持任务重启和持久化状态。通过 cron 调度器管理多个并发任务，适用于实时监控 DeFi、NFT 或加密货币相关事件。项目结构模块化，便于扩展和维护。
 
 
-Web3-Monitor-Go 是一个开源的 Web3 信息监控项目，使用 Go 语言实现。主要功能包括：
+Chain-Scout 是一个开源的 Web3 信息监控项目，使用 Go 语言实现。主要功能包括：
 - **定时爬虫任务**：采集 Web3 相关新闻（如从 CoinDesk、Twitter 等源）。
 - **仓位监控**：实时监控区块链钱包或合约仓位变化（支持 Ethereum 等 EVM 链）。
 - **数据库支持**：使用 MongoDB 存储采集数据和任务状态，支持任务重启（程序崩溃或重启时从数据库恢复）。
@@ -30,8 +31,8 @@ Web3-Monitor-Go 是一个开源的 Web3 信息监控项目，使用 Go 语言实
 ### 步骤
 1. 克隆仓库：
    ```
-   git clone git@github.com:cpython666/web3-monitor-go.git
-   cd web3-monitor-go
+   git clone git@github.com:cpython666/chain-scout.git
+   cd chain-scout
    ```
 
 2. 安装依赖：
@@ -64,7 +65,7 @@ Web3-Monitor-Go 是一个开源的 Web3 信息监控项目，使用 Go 语言实
 
 ## 项目目录结构
 ```
-web3-monitor-go/
+chain-scout/
 ├── cmd/
 │   └── monitor/
 │       └── main.go
